@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="container" style="max-width: 500px">
+        <div class="card mb-3">
+            <div class="card-body text-start px-5 py-4">
+                <h5 class="card-title">Handle Stock</h5>
+                <div class="d-flex gap-2">
+                    <a href="/restock" class="btn btn-primary w-100">Restock</a>
+                    <a href="/stock" class="btn btn-primary w-100">View Stock</a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body text-start px-5 py-4">
+                <h5 class="card-title">Rotate Stock</h5>
+                <div class="d-flex gap-2">
+                    <a href="/add" class="btn btn-primary w-100">New Product</a>
+                    <a href="/remove" class="btn btn-primary w-100">Remove product</a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body text-start px-5 py-4">
+                <h5 class="card-title">Fullfill</h5>
+                <div class="d-flex gap-2">
+                    <a href="/orders" class="btn btn-primary w-100">View Orders</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

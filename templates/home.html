@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="container" style="max-width: 1000px; justify-content: center">
+        <div class="row">
+            {%for item in products%}
+                <div class="col-sm-4 mb-4">
+                    <div class="card">
+                        <div class="card-body py-3">
+                            <h5 class="card-title">{{item["name"]}}</h5>
+                            <p class="card-text">Category: {{item["category"]}}</p>
+                            <p class="card-text">Price: {{item["salePrice"] | usd}}</p>
+                            <a href="/view/{{item['productID']}}" class="btn btn-primary">View</a>
+                        </div>
+
+                    </div>
+                </div>
+            {%endfor%}
+        </div>
+    </div>
+{% endblock %}

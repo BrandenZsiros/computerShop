@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+       <div class="container" style="max-width: 500px">
+            <div class="card">
+                <div class="card-body p-4 text-start ">
+                        <h5 class="card-title ">{{item[0]["name"]}}</h5>
+                        <p class="card-text">Category: {{item[0]["category"]}}</p>
+                        <p class="card-text">Price: {{item[0]["salePrice"] | usd}}</p>
+                    <p class="card-text">{{item[0]["description"]}}</p>
+                    <div class="d-flex gap-2">
+                        <a href="/buy/{{item[0]['productID']}}" class="btn btn-primary flex-fill">View</a>
+                        <a href="/" class="btn btn-primary flex-fill">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
