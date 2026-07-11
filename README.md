@@ -7,9 +7,10 @@
 2. [Technology](#technology)
 3. [Design](#design)
 4. [Files](#files)
-5. [Future improvements](#future-improvements)
-6. [Contributing](#contributing)
-7. [Licence](#licence)
+5. [Conclusions](#conclusions)
+6. [Future improvements](#future-improvements)
+7. [Contributing](#contributing)
+8. [Licence](#licence)
 
 ## Learning Objective
 Construct a web app experimenting with server-side rendering to understand the trade-off between using APIs for transferring data to the frontend for client side rendering vs rendering the UI server-side. To better understand the trade-off that is being made design wise due to the common understanding that APIs require you to manage more components.
