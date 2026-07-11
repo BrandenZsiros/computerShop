@@ -52,6 +52,15 @@ Now based on this we now know the types on data that needs to be stored in parti
 - orders.html - Template for viewing a fulfilling all the orders placed.
 - register.html - A debug template for filling out a new user since password hashing is used.
 
+## Conclusions
+- Introducing APIs can improve decoupling between the backend and frontend by reducing the passing of information directly
+- Adding models into the architecture generally reduce repetition of key interactions between the controller and database.
+- Models can increase design cohesion by abstracting out implementation and business rules from the controller.
+- Wide screen friendly design includes the introduction horizontal content limits keeping everything centred.
+
+### Overall
+While there are initial benefits from omitting a model from the design of an app, as an app becomes larger the trade-off no longer becomes worth it for the reasons mentioned above.
+
 ## Future improvements
 - Add a cart system that allows ordering multiple products in a order.
 - Use an external provider to handle identity management.
