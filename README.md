@@ -1,5 +1,4 @@
 # Computer Shop
-#### Video Demo:  https://youtu.be/RhQi9tO6t0c
 #### Author: BrandenZsiros
 #### Description: A simple web app to simulate an potential online store for a business.
 
